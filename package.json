@@ -1,0 +1,17 @@
+{
+  "name": "just-dare-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "discord-anti-spam": "2.5.0",
+    "discord.js": "12.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}
