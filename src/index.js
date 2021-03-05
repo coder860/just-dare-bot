@@ -2,7 +2,7 @@ const { Client, MessageEmbed } = require("discord.js");
 const client = new Client({
   partials: ["MESSAGE", "REACTION", "CHANNEL"]
 });
-
+client.login(process.env.TOKEN);
 const AntiSpam = require("discord-anti-spam");
 const antiSpam = new AntiSpam({
   warnThreshold: 3, // Amount of messages sent in a row that will cause a warning.
@@ -119,5 +119,3 @@ client.on("messageReactionRemove", async (reaction, user) => {
     }
   } else return;
 });
-
-client.login(process.env.TOKEN);
